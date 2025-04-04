@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Data Analysis</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+</head>
+
+<body>
+  <!-- 🔥 Page Section with Scoped Video Background -->
+  <section class="page-section" id="3js">
+    <!-- 🎥 Background Video (only for this section) -->
+    <video autoplay muted loop class="video-bg">
+      <source src="bg.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- 🔗 Overlay Content (nav + search) -->
+    <div class="overlay-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <a href="#" class="logo">Stack Overflow</a>
+        <div class="nav-links flex">
+          <a href="#page-section">Home</a>
+          <a href="#chart">Chart</a>
+          <a href="#">Data Analysis</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Search -->
+      <div class="search-container">
+        <div class="search-box">
+          <input type="text" placeholder="Search for answers..." />
+          <button>Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section><!-- Add this section after your chart-section div -->
+    <div class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-header">
+          <h2>About This Project</h2>
+        </div>
+
+        <div class="about-content">
+          <div class="project-info">
+            <h3>Project Overview</h3>
+            <p>
+              This data visualization platform was developed as part of the advanced web development course.
+              It aims to provide an intuitive interface for users to upload, analyze, and visualize various
+              datasets through interactive charts and graphs. The project demonstrates the application of
+              modern web technologies including HTML5, CSS3, JavaScript, and Chart.js.
+            </p>
+
+            <h3>Key Features</h3>
+            <ul>
+              <li>Interactive data visualization with multiple chart types</li>
+              <li>CSV file upload and parsing capabilities</li>
+              <li>Responsive design that works across all devices</li>
+              <li>Modern UI with glassmorphism effects</li>
+              <li>Dynamic chart generation based on dataset characteristics</li>
+            </ul>
+
+            <h3>Technologies Used</h3>
+            <div class="tech-stack">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Chart.js</span>
+              <span class="tech-badge">Flask</span>
+            </div>
+          </div>
+
+          <div class="professor-info">
+            <div class="professor-card">
+              <div class="professor-img">
+                <!-- Replace with actual professor image if available -->
+                <div class="professor-img-placeholder">
+                  <span>Prof</span>
+                </div>
+              </div>
+              <div class="professor-details">
+                <h3>Course Instructor</h3>
+                <h4>Professor Achal Agarwal, Ph.D.</h4>
+                <p class="professor-title">Professor, Data Handling In Python</p>
+                <div class="professor-contact">
+                  <p><strong>Email:</strong> achal@sitare.org</p>
+                  <p><strong>Office:</strong> Omega</p>
+                  <p><strong>Office Hours:</strong> Friday, 9:00 AM - 4:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <!-- Add this section after your about-section div -->
+    <div class="contact-section" id="contact">
+      <div class="contact-container">
+        <div class="contact-header">
+          <h2>Contact Information</h2>
+        </div>
+
+        <div class="contact-content">
+          <div class="student-info">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-img">
+                  <!-- Replace with your actual image if available -->
+                  <div class="profile-img-placeholder">
+                    <span>JS</span>
+                  </div>
+                </div>
+                <div class="profile-title">
+                  <h3>Neeraj Parmar</h3>
+                  <p class="student-id">Student ID: 202410101200082</p>
+                </div>
+              </div>
+
+              <div class="profile-details">
+                <div class="detail-row">
+                  <div class="detail-icon">📚</div>
+                  <div class="detail-text">
+                    <p class="detail-label">Program</p>
+                    <p class="detail-value">B.Tech Computer Science</p>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-icon">🏫</div>
+                  <div class="detail-text">
+                    <p class="detail-label">University</p>
+                    <p class="detail-value">Sitare University</p>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-icon">📧</div>
+                  <div class="detail-text">
+                    <p class="detail-label">Email</p>
+                    <p class="detail-value">su-24084@sitare.org</p>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-icon">📱</div>
+                  <div class="detail-text">
+                    <p class="detail-label">Phone</p>
+                    <p class="detail-value">7489922370</p>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-icon">🔗</div>
+                  <div class="detail-text">
+                    <p class="detail-label">Portfolio</p>
+                    <p class="detail-value"><a href="https://chipper-hamster-9a7807.netlify.app/">https://chipper-hamster-9a7807.netlify.app/</a></p>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-icon">💼</div>
+                  <div class="detail-text">
+                    <p class="detail-label">GitHub</p>
+                    <p class="detail-value"><a href="https://github.com/Neeraj-NP">https://github.com/Neeraj-NP</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="message-form">
+            <h3>Send me a message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="course-info">
+          <h3>Course Details</h3>
+          <div class="course-details">
+            <div class="course-detail">
+              <span class="course-label">Course Code:</span>
+              <span class="course-value">CS 4080</span>
+            </div>
+            <div class="course-detail">
+              <span class="course-label">Course Name:</span>
+              <span class="course-value">Data handling in python</span>
+            </div>
+            <div class="course-detail">
+              <span class="course-label">Semester:</span>
+              <span class="course-value">Spring 2025</span>
+            </div>
+            <div class="course-detail">
+              <span class="course-label">Submission Date:</span>
+              <span class="course-value">April 5, 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="chart">
+    <h1>Stack Overflow Tag Trends (2023-2025)</h1>
+    
+    <div class="chart-container">
+      <h2 style ="text-align: center;">Line Chart </h2>
+      <canvas id="lineChart"></canvas>
+
+    </div>
+    <div class="chart-container">
+      <h2 style ="text-align: center;">Bar Chart </h2>
+      <canvas id="barChart"></canvas>
+
+    </div>
+    <h2>Bar Chart</h2>
+    <h2>Bar Chart</h2>
+
+
+
+    </div>
+  </section>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
