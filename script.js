@@ -17,14 +17,14 @@ function setVanta() {
 
 // Initialize the animation when the page loads
 window.onload = setVanta;
-const apiUrl = "http://192.168.43.178:5000/data";  // Change to your API URL
+const apiUrl = "https://data-analyzer-backend.onrender.com/data";  // Change to your API URL
 
 let globalData = []; // Store data globally
 let availableYears = []; // Store available years dynamically
 
 async function fetchData() {
     try {
-        const response = await fetch("http://192.168.43.178:5000/data");
+        const response = await fetch("https://data-analyzer-backend.onrender.com/data");
         const data = await response.json();
         console.log("Fetched Data:", data);  // Debugging
 
